@@ -172,5 +172,9 @@ void main() async {
       .handler;
 
   final server = await io.serve(handler, InternetAddress.anyIPv4, 8080);
+  //62.249.129.109
+  //InternetAddress.anyIPv4
+  print(server.address.host);
+
   print('Сервер запущен на http://${server.address.host}:${server.port}');
 }
